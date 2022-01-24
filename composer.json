@@ -1,0 +1,19 @@
+{
+    "name": "bobo1212/zero-mq-hash-tx-hash-block-client",
+    "description": "Bitcoin ZeroMq client for hashtx and hashblock",
+    "type": "library",
+    "license": "Mit",
+    "autoload": {
+        "psr-4": {
+            "Bitcoin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bobo1212",
+            "email": "bobo1212@wp.pl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

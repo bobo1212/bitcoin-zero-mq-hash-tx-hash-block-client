@@ -1,8 +1,8 @@
 {
-    "name": "bobo1212/zero-mq-hash-tx-hash-block-client",
-    "description": "Bitcoin ZeroMq client for hashtx and hashblock",
+    "name": "bobo1212/bitcoin-zero-mq-hash-tx-hash-block-client",
+    "description": "Bitcoin ZeroMq PHP client only for hashtx and hashblock",
     "type": "library",
-    "license": "Mit",
+    "license": "MIT License",
     "autoload": {
         "psr-4": {
             "Bitcoin\\": "src/"
@@ -15,5 +15,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "ext-sockets": "*"
+    }
 }

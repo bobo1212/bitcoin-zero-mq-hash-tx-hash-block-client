@@ -77,7 +77,6 @@ class ZeroMqHashTxHashBlockClient
         }
     }
 
-
     /**
      * @param int $lenght
      * @return string
@@ -96,7 +95,7 @@ class ZeroMqHashTxHashBlockClient
         }
         $ret = substr($this->chunk, 0, $lenght);
         $this->chunk = substr($this->chunk, $lenght);
-        return $ret;
+        return (string)$ret;
     }
 
     /**

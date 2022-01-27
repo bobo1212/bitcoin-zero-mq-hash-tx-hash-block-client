@@ -12,4 +12,4 @@ Add following lines to composer.json
     ]
 ```
 
-and run ```composer require bobo1212/zero-mq-hash-tx-hash-block-client`` in your project directory.
+and run ```composer require bobo1212/zero-mq-hash-tx-hash-block-client``` in your project directory.

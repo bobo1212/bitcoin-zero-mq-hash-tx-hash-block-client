@@ -18,7 +18,7 @@ and run ```composer require bobo1212/zero-mq-hash-tx-hash-block-client``` in you
 
 Add following lines to bitcoin.conf
 
-```
+```ini
 zmqpubhashblock=tcp://127.0.0.1:28335
 zmqpubhashtx=tcp://127.0.0.1:28334
 ```

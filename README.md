@@ -53,6 +53,6 @@ use Bitcoin\ZeroMqHashTxHashBlockClient;
 
 $client = new ZeroMqHashTxHashBlockClient('localhost', 28335, ZeroMqHashTxHashBlockClient::Q_NAME_HASH_BLOCK);
 $client->onMsg(function ($hashblock) {
-echo 'hashblock: ' . $hashblock . "\n";
+    echo 'hashblock: ' . $hashblock . "\n";
 });
 ```

@@ -72,7 +72,6 @@ class ZeroMqHashTxHashBlockClient
     {
         foreach ($this->handShake as $out) {
             socket_write($this->socketToServer, $out, strlen($out));
-            usleep(1000);
             socket_read($this->socketToServer, 2048, PHP_BINARY_READ);
         }
     }

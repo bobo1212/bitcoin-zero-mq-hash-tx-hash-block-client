@@ -25,17 +25,17 @@ zmqpubhashblock=tcp://127.0.0.1:28335
 
 ## Consume  hashtx
 ```php
-    /**
-     * Include composer autoloader by uncommenting line below
-     * if you're not already done it anywhere else in your project.
-     **/
-    
-    //require 'vendor/autoload.php';
-    
-    use Bitcoin\ZeroMqHashTxHashBlockClient;
-    
-    $client = new ZeroMqHashTxHashBlockClient('localhost', 28334, ZeroMqHashTxHashBlockClient::Q_NAME_HASH_TX);
-    $client->onMsg(function($hashtx){
-        echo 'hashtx: '. $hashtx."\n";
-    });
+/**
+ * Include composer autoloader by uncommenting line below
+ * if you're not already done it anywhere else in your project.
+ **/
+
+//require 'vendor/autoload.php';
+
+use Bitcoin\ZeroMqHashTxHashBlockClient;
+
+$client = new ZeroMqHashTxHashBlockClient('localhost', 28334, ZeroMqHashTxHashBlockClient::Q_NAME_HASH_TX);
+$client->onMsg(function($hashtx){
+    echo 'hashtx: '. $hashtx."\n";
+});
 ```

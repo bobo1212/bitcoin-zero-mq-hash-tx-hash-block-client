@@ -13,3 +13,12 @@ Add following lines to composer.json
 ```
 
 and run ```composer require bobo1212/zero-mq-hash-tx-hash-block-client``` in your project directory.
+
+## Config bitcoind 
+
+Add following lines to bitcoin.conf
+
+```ini
+zmqpubhashblock=tcp://127.0.0.1:28335
+zmqpubhashtx=tcp://127.0.0.1:28334
+```

@@ -35,7 +35,7 @@ zmqpubhashblock=tcp://127.0.0.1:28335
 use Bitcoin\ZeroMqHashTxHashBlockClient;
 
 $client = new ZeroMqHashTxHashBlockClient('localhost', 28334, ZeroMqHashTxHashBlockClient::Q_NAME_HASH_TX);
-$client->onMsg(function($hashtx){
-    echo 'hashtx: '. $hashtx."\n";
+$client->onMsg(function ($hashtx) {
+    echo 'hashtx: ' . $hashtx . "\n";
 });
 ```

@@ -1,4 +1,4 @@
-# Bitcoin ZeroMq PHP client only for hashtx and hashblock.
+# Bitcoin ZeroMq PHP client for hashtx and hashblock.
 
 ## Installation with Composer
 

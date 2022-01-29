@@ -104,7 +104,11 @@ class ZeroMqHashTxHashBlockClient
     {
         while (true) {
             $this->readChunk(2);
-            $this->readChunk(strlen($this->qName));
+            $qName = $this->readChunk(strlen($this->qName));
+            if ($qName != $this->qName) {
+                $this->closeConnetion();
+                throw new Exception("Stream read error");
+            }
             $this->readChunk(2);
             $hashBin = $this->readChunk(32);
             $this->readChunk(6);

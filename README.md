@@ -39,3 +39,20 @@ $client->onMsg(function ($hashtx) {
     echo 'hashtx: ' . $hashtx . "\n";
 });
 ```
+
+## Consume  hashblock
+```php
+/**
+* Include composer autoloader by uncommenting line below
+* if you're not already done it anywhere else in your project.
+  **/
+
+//require 'vendor/autoload.php';
+
+use Bitcoin\ZeroMqHashTxHashBlockClient;
+
+$client = new ZeroMqHashTxHashBlockClient('localhost', 28335, ZeroMqHashTxHashBlockClient::Q_NAME_HASH_BLOCK);
+$client->onMsg(function ($hashblock) {
+echo 'hashblock: ' . $hashblock . "\n";
+});
+```

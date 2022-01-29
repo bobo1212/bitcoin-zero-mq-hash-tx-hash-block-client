@@ -56,3 +56,14 @@ $client->onMsg(function ($hashblock) {
     echo 'hashblock: ' . $hashblock . "\n";
 });
 ```
+## Donations
+If you like this project, please consider donating:<br>
+**BTC**: 38kXJgKubEEojpzQe91T3dU6BKiwgN2euo<br>
+<p>
+  <img src="assets/qrcode.png">
+</p>
+❤Thanks for your support!❤
+
+
+## Contact
+bobo1212@wp.pl
